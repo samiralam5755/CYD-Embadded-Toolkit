@@ -42,21 +42,6 @@ It features over **26 built-in tools**, an intuitive touch GUI, NVS persistent m
 
 ---
 
-## 🔌 Hardware Requirements & Specifications
-
-- **Target Board**: ESP32 Cheap Yellow Display (**ESP32-2432S028R**)
-- **Display**: 2.8" ILI9341 SPI TFT (320 × 240 pixels)
-- **Touchscreen**: XPT2046 SPI Resistive Touch
-- **Storage**: MicroSD Card Slot (SPI, CS = GPIO 5)
-- **Onboard Peripherals**:
-  - RGB LEDs: GPIO 4 (Red), GPIO 16 (Green), GPIO 17 (Blue)
-  - LDR Light Sensor: GPIO 34 (ADC)
-  - CN1 Expansion Connector: GPIO 22 (RX2), GPIO 27 (TX2)
-  - Probe / Analog Input: GPIO 35 (ADC)
-  - Audio / DAC Output: GPIO 26 (DAC2) / GPIO 25 (DAC1)
-
----
-
 ## ✨ Key Features Detailed Overview
 
 ### ⚡ Core Electronics & Diagnostics Tools
@@ -241,43 +226,7 @@ To change hardware pin assignments without re-compiling:
 ## 🎯 Touch Calibration & NVS Sync
 
 The toolkit uses the "sys" NVS namespace:
-- 	s_minx, 	s_maxx, 	s_miny, 	s_maxy, 	s_swap
-- **Sync**: Calibration performed in CYD OTA Launcher is automatically read on boot by Toolkit.
 - **Re-calibration**: To re-calibrate inside Toolkit, open **Page 4 (Electronics)** → **Calibrate** → Tap the 4 corner targets carefully.
-
----
-
-## 🛠️ Installation & Compilation Guide
-
-### Requirements
-- **Arduino IDE** (v2.0+)
-- **ESP32 Board Package** (v2.0.x or v3.0+)
-
-### Required Libraries
-Install via Arduino Library Manager:
-- TFT_eSPI by Bodmer
-- SD (Built-in)
-- Preferences (Built-in)
-- WiFi (Built-in)
-- SPI (Built-in)
-
-### TFT_eSPI Configuration (User_Setup.h)
-Make sure your TFT_eSPI/User_Setup.h has the following setup for CYD:
-```cpp
-#define ILI9341_DRIVER
-#define TFT_MISO 12
-#define TFT_MOSI 13
-#define TFT_SCLK 14
-#define TFT_CS   15
-#define TFT_DC    2
-#define TFT_RST  -1
-#define TFT_BL   21
-#define TFT_BACKLIGHT_ON LOW
-#define TOUCH_CS 33
-```
-
-### Partition Scheme
-- Select **Huge APP (3MB No OTA / 1MB SPIFFS)** or **Default 4MB with spiffs**.
 
 ---
 
