@@ -230,6 +230,13 @@ The toolkit uses the "sys" NVS namespace:
 
 ---
 
-## 👨‍💻 Developed By Samir Alam
+## 💬 Help & Support
+If you run into issues, need custom builds, or want to explore matching hardware accessories:
+* **Get Help & Issues**: [Report an Issue](https://github.com/samiralam5755/CYD-Video-Player/issues)
+* **Official Support**: [Quadever Support](https://www.quadever.com/support)
+* **Developer Coffee**: [Support Samir Alam on Ko-fi](https://ko-fi.com/samir_alam)
+---
+*Developed with ❤️ by Samir Alam | [Quadever](https://www.quadever.com)*
+
 
 ---
