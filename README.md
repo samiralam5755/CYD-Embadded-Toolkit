@@ -230,10 +230,6 @@ The toolkit uses the "sys" NVS namespace:
 
 ---
 
-## 👨‍💻 Author & Credits
-
-- **Developer & Creator**: **Samir Alam**
-- **Hardware Platform**: ESP32 Cheap Yellow Display (CYD / ESP32-2432S028R)
-- **License**: MIT Open Source
+## 👨‍💻 Developed By Samir Alam
 
 ---
